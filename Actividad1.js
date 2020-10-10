@@ -36,9 +36,9 @@ console.log(aprobo([8,6,2,4]));
 
 
 //Actividad 6
-var condicion = (nota) => nota >= 4;
 
 function quienesAprobaron(notasAlumnos){
+    var condicion = (nota) => nota >= 4;
     var alap = notasAlumnos.filter((nota) => nota.every(condicion));
     return alap;
 }
